@@ -18,15 +18,27 @@ Use console.log() to clearly show the before-and-after type conversions.
 
 */
 
-
-let result = "5" - 2;
+//I converted the string to a number 
+let result = Number("5") - 2;
 console.log("The result is: " + result);
 
+//added a condition to isValid
 let isValid = Boolean("false");
-if (isValid) {
+if (isValid ="false") {
     console.log("This is valid!");
 }
 
+//Utilizing the same as above I converted age to number to make equasion work
 let age = "25";
-let totalAge = age + 5;
+let totalAge = Number(age) + 5;
 console.log("Total Age: " + totalAge);
+
+
+//Implicit type example:
+let amount = 35;
+console.log(`Timmy has ${amount} apples.`);
+// Side note for me later: remember ` instead of ' for the conversion here. 
+
+
+//Explicit type example
+console.log(String(0914))
